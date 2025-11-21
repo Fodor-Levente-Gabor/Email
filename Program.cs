@@ -56,7 +56,14 @@ namespace Email
                         emailek.RemoveAt(index);
                         break;
                     case "4":
-                        Console.WriteLine("érvényes emailok listázása");
+                        Console.WriteLine("Érvényes emailok listája:");
+                        foreach (string email in emailek)
+                        {
+                            if (emailek.Contains(".") && emailek.Contains("@"))
+                            { 
+                                Console.WriteLine(email);
+                            }
+                        }
                         break;
                     default: 
                         Console.WriteLine("rossz parancs");
