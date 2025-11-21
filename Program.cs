@@ -44,7 +44,10 @@ namespace Email
                         }
                         break;
                     case "2": 
+                        Console.Clear();
                         Console.WriteLine("új email");
+                        string uj = Console.ReadLine();
+                        emailek.Add(uj);
                         break;
                     case "3":
                         Console.WriteLine("email törlése");
