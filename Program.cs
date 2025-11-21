@@ -35,7 +35,13 @@ namespace Email
                     case "0":
                         return;
                     case "1":
-                        Console.WriteLine("emailek listázása");
+                        Console.Clear();
+                        Console.WriteLine("emailek címek:");
+                        int sor = 0;
+                        foreach (string email in emailek)
+                        {
+                            Console.WriteLine($"{sor++} {email}");
+                        }
                         break;
                     case "2": 
                         Console.WriteLine("új email");
