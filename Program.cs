@@ -50,7 +50,10 @@ namespace Email
                         emailek.Add(uj);
                         break;
                     case "3":
-                        Console.WriteLine("email törlése");
+                        Console.Clear();
+                        Console.WriteLine("Adja meg a törlendő email azonosítóját:");
+                        int index = Convert.ToInt32(Console.ReadLine());
+                        emailek.RemoveAt(index);
                         break;
                     case "4":
                         Console.WriteLine("érvényes emailok listázása");
