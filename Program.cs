@@ -8,9 +8,19 @@ namespace Email
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
+            List<String> emailek = new List<String>();
+            emailek.Add("alma@körte.com");
+            emailek.Add("banán@körte.com");
+            emailek.Add("répa@alma.com");
+            emailek.Add("banán@alma.hu");
+            emailek.Add("géza@körte.com");
+            emailek.Add("hurka@répa.com");
+
             //menüvezérlés
+
             while (true)
             {
                 Console.WriteLine("0 - kilépés");
